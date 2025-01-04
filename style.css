@@ -1,0 +1,133 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #4caf50;
+}
+
+.snow-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: 999;
+    overflow: hidden;
+}
+
+.snowflake {
+    position: absolute;
+    top: -10px;
+    font-size: 16px;
+    color: white;
+    animation: fall linear infinite;
+}
+
+@keyframes fall {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(100vh) rotate(360deg);
+    }
+}
+
+#landing-page {
+    background: url('images/landing-bg.jpg') no-repeat center/cover;
+    text-align: center;
+    color: #fff;
+    padding: 50px 20px;
+}
+
+#landing-page h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+#landing-page p {
+    font-size: 1.5rem;
+    margin: 20px 0 0;
+}
+
+#katalog {
+    background-color: #ffeb3b;
+    padding: 20px;
+    text-align: center;
+}
+
+.produk-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.produk {
+    background-color: white;
+    border: 2px solid #4caf50;
+    border-radius: 10px;
+    padding: 15px;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.produk:hover {
+    transform: scale(1.05);
+}
+
+.produk img {
+    max-width: 150px;
+    margin-bottom: 10px;
+}
+
+.harga-asli {
+    text-decoration: line-through;
+    color: #757575;
+}
+
+.harga-diskon {
+    color: #d32f2f;
+    font-weight: bold;
+}
+
+#countdown {
+    background-color: #d32f2f;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1.5em;
+}
+
+#lokasi {
+    padding: 20px;
+    text-align: center;
+}
+
+.lokasi-container {
+    background-color: #fff;
+    padding: 20px;
+    margin: 0 auto;
+    max-width: 600px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+footer {
+    background-color: #4caf50;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+}
+
+.footer-icons a {
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.footer-icons a:hover {
+    color: #ffeb3b;
+}
